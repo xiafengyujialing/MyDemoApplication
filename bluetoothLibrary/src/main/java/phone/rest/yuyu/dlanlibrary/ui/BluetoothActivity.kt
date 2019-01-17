@@ -11,7 +11,7 @@ import phone.rest.yuyu.dlanlibrary.service.BluetoothService
  * @date 2019/1/14
  */
 
-class ScreeningActivity : AppCompatActivity() {
+class BluetoothActivity : AppCompatActivity() {
 
     private var mIntent: Intent? = null
 

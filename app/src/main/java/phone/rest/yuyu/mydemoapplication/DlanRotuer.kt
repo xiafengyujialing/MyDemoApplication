@@ -13,7 +13,7 @@ class DlanRotuer {
         var rotuer: HashMap<String, String> = HashMap()
 
         init {
-            rotuer[screening_activity] = "phone.rest.yuyu.dlanlibrary.ui.ScreeningActivity"
+            rotuer[screening_activity] = "phone.rest.yuyu.dlanlibrary.ui.BluetoothActivity"
         }
     }
 

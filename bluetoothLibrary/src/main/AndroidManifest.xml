@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application>
-        <activity android:name=".ui.ScreeningActivity"/>
+        <activity android:name=".ui.BluetoothActivity"/>
 
         <service android:name=".service.BluetoothService"/>
     </application>
