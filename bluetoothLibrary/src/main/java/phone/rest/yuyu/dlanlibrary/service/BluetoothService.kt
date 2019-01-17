@@ -15,6 +15,11 @@ import android.widget.Toast
 import phone.rest.yuyu.dlanlibrary.listener.MyLocationListener
 import java.text.SimpleDateFormat
 import java.util.*
+import android.support.v4.content.ContextCompat.startActivity
+import android.content.Intent
+import android.net.Uri
+import java.net.URLEncoder
+
 
 /**
  * @author yujialing
@@ -29,6 +34,12 @@ class BluetoothService : Service() {
     private val df = SimpleDateFormat("HH:mm", Locale.ENGLISH)//设置日期格式
 
     private lateinit var mContext: Context
+
+    // 记录打卡时间
+    private var recordDingding: Date? = null
+
+    private val mMessage = arrayOf("主人，打卡上班吧", "主人，打卡下班吧")
+    private var mIndex = 0
 
     override fun onBind(intent: Intent?): IBinder {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -96,14 +107,18 @@ class BluetoothService : Service() {
                 device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)
                 Log.e(">>>", device.name + "+" + device.address)
                 // 指定 设备ip
-                if ("D4:63:C6:8E:89:76" == (device.address) || "8C:85:90:41:58:31" == device.address) {
+                if ("D4:63:C6:8E:89:76" == (device.address) || "8C:85:90:41:58:31" == device.address || "45:49:AD:E1:16:FC" == device.address) {
                     if (!mShowDialog) {
                         bluetoothAdapter!!.cancelDiscovery()
                         mShowDialog = true
                         // 做出提醒 可以放音乐 或震动
                         val alertdialog = AlertDialog.Builder(mContext)
-                            .setTitle("提示").setMessage("主人，打卡上班吧")
-                            .setPositiveButton("去打卡") { dialog, _ -> dialog.dismiss() }
+                            .setTitle("提示").setMessage(mMessage[mIndex])
+                            .setPositiveButton("去打卡") { dialog, _ ->
+                                dialog.dismiss()
+                                recordDingding = Calendar.getInstance().time
+                                startDingtalkApp(mContext, "")
+                            }
                             .setNegativeButton("5分钟后提醒") { dialog, _ ->
                                 mShowDialog = false
                                 dialog.dismiss()
@@ -142,7 +157,7 @@ class BluetoothService : Service() {
                             if (bluetoothAdapter!!.isDiscovering) {
                                 bluetoothAdapter!!.cancelDiscovery()
                                 bluetoothAdapter!!.startDiscovery()
-                            }else {
+                            } else {
                                 bluetoothAdapter!!.startDiscovery()
                             }
                         }
@@ -159,9 +174,10 @@ class BluetoothService : Service() {
      */
     private fun isTimeCheck(): Boolean {
         val nowTime = df.parse(df.format(Date()))
+
         val beginAMTime = df.parse("09:00")
         val endAMTime = df.parse("10:30")
-        val beginPMTime = df.parse("19:30")
+        val beginPMTime = df.parse("11:30")
         val endPMTime = df.parse("22:30")
 
         val now = Calendar.getInstance()
@@ -172,15 +188,25 @@ class BluetoothService : Service() {
         begin.time = beginAMTime
         end.time = endAMTime
         if (now.after(begin) && now.before(end)) {
+            mIndex = 0
             return true
         }
 
         begin.time = beginPMTime
         end.time = endPMTime
         if (now.after(begin) && now.before(end)) {
+            if (recordDingding != null) {
+                val dingdingTime= df.parse(df.format(recordDingding))
+                val hours = (nowTime.time - dingdingTime!!.time) / (1000 * 60 * 60)
+                Log.e("hours", "" + hours)
+                if (hours > 10) {
+                    mIndex = 1
+                    return true
+                }
+                return false
+            }
             return true
         }
-
         return false
     }
 
@@ -196,7 +222,7 @@ class BluetoothService : Service() {
         if (list.contains(LocationManager.NETWORK_PROVIDER)) {
             //是否为网络位置控制器
             provider = LocationManager.NETWORK_PROVIDER
-        }else if (list.contains(LocationManager.GPS_PROVIDER)) {
+        } else if (list.contains(LocationManager.GPS_PROVIDER)) {
             //是否为GPS位置控制器
             provider = LocationManager.GPS_PROVIDER
         } else {
@@ -204,7 +230,7 @@ class BluetoothService : Service() {
             return null
         }
 
-        locationManager.requestLocationUpdates(provider,1000,0f, MyLocationListener())
+        locationManager.requestLocationUpdates(provider, 1000, 0f, MyLocationListener())
 
         return locationManager.getLastKnownLocation(provider)
     }
@@ -215,6 +241,22 @@ class BluetoothService : Service() {
         unregisterReceiver(searchDevicesReceiver)
         if (bluetoothAdapter!!.isDiscovering) {
             bluetoothAdapter!!.cancelDiscovery()
+        }
+    }
+
+    /**
+     * 打开钉钉客户端 并在钉钉客户端打开传入的指定url
+     * @param context 安卓上下文环境，推荐Activity Context
+     * @param url 需要在钉钉客户端打开的页面地址
+     */
+    private fun startDingtalkApp(context: Context, url: String) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        val jumpUrl = "dingtalk://dingtalkclient/page/link?url=" + URLEncoder.encode(url) //一定要对url做encode
+        val uri = Uri.parse(jumpUrl)
+        intent.data = uri
+        if (null != intent.resolveActivity(context.packageManager)) {
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context.startActivity(intent)
         }
     }
 }

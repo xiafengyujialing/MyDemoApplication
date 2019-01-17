@@ -9,8 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bluetoothLibrary" />
             <option value="$PROJECT_DIR$/commonLibs" />
-            <option value="$PROJECT_DIR$/dlanlibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,1 +1,1 @@
-include ':app', ':dlanlibrary', ':commonLibs'
+include ':app', ':bluetoothLibrary', ':commonLibs'
