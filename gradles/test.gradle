@@ -1,0 +1,60 @@
+apply plugin: 'maven'
+
+def javadocName = 'appApi'
+def docDest = 'build/doc/'
+
+// javadoc 有个坑 kotlin代码不能自动编译通过
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    destinationDir = file(docDest + javadocName)
+}
+
+javadoc {
+    options {
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        author true
+        version true
+        links "http://docs.oracle.com/javase/7/docs/api"
+    }
+}
+
+// compileJava
+
+// processResources
+
+// uploadArchives
+
+// 发布本地jar
+version '1.0.0'
+group 'phone.rest.yuyu.mydemoapplication'
+task publishJar(type: Jar)
+artifacts {
+    archives publishJar
+}
+
+//def publishFile = file('build/buildile')
+//artifacts {
+//    archives publishFile
+//}
+
+uploadArchives {
+    repositories {
+        flatDir {
+            name 'libs'
+            dirs "$projectDir/libs"
+        }
+        mavenLocal()
+        mavenDeployer {
+            repository(url: "") {
+                authentication(userName: "", password: "pwd")
+            }
+            snapshotRepository(url: "") {
+                authentication(userName: "", password: "")
+            }
+        }
+    }
+}
+
+

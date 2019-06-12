@@ -1,0 +1,5 @@
+<lint>
+    <issue id="InvalidPackage">
+        <ignore path="libs/cling-core-2.1.1.jar"/>
+    </issue>
+</lint>

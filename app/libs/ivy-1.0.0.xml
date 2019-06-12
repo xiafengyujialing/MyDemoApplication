@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="phone.rest.yuyu.mydemoapplication" module="app" revision="1.0.0" status="integration" publication="20190126153944"/>
+  <configurations>
+    <conf name="_internal_aapt2_binary" visibility="private" transitive="false"/>
+    <conf name="androidApis" visibility="public"/>
+    <conf name="androidTestAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestApi" visibility="private" extends="androidTestCompile"/>
+    <conf name="androidTestApiDependenciesMetadata" visibility="private" extends="androidTestApi"/>
+    <conf name="androidTestApk" visibility="private"/>
+    <conf name="androidTestCompile" visibility="private"/>
+    <conf name="androidTestCompileOnly" visibility="private" extends="androidTestProvided"/>
+    <conf name="androidTestCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestCompileOnly"/>
+    <conf name="androidTestDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestDebugApi" visibility="private" extends="androidTestDebugCompile"/>
+    <conf name="androidTestDebugApiDependenciesMetadata" visibility="private" extends="androidTestDebugApi"/>
+    <conf name="androidTestDebugApk" visibility="private"/>
+    <conf name="androidTestDebugCompile" visibility="private"/>
+    <conf name="androidTestDebugCompileOnly" visibility="private" extends="androidTestDebugProvided"/>
+    <conf name="androidTestDebugCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestDebugCompileOnly"/>
+    <conf name="androidTestDebugImplementation" visibility="private" extends="androidTestDebugApi"/>
+    <conf name="androidTestDebugImplementationDependenciesMetadata" visibility="private" extends="androidTestDebugImplementation"/>
+    <conf name="androidTestDebugProvided" visibility="private"/>
+    <conf name="androidTestDebugRuntimeOnly" visibility="private" extends="androidTestDebugApk"/>
+    <conf name="androidTestDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestDebugRuntimeOnly"/>
+    <conf name="androidTestDebugWearApp" visibility="private"/>
+    <conf name="androidTestFreeAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestFreeApi" visibility="private" extends="androidTestFreeCompile"/>
+    <conf name="androidTestFreeApiDependenciesMetadata" visibility="private" extends="androidTestFreeApi"/>
+    <conf name="androidTestFreeApk" visibility="private"/>
+    <conf name="androidTestFreeCompile" visibility="private"/>
+    <conf name="androidTestFreeCompileOnly" visibility="private" extends="androidTestFreeProvided"/>
+    <conf name="androidTestFreeCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestFreeCompileOnly"/>
+    <conf name="androidTestFreeDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestFreeDebugApi" visibility="private" extends="androidTestFreeDebugCompile"/>
+    <conf name="androidTestFreeDebugApiDependenciesMetadata" visibility="private" extends="androidTestFreeDebugApi"/>
+    <conf name="androidTestFreeDebugApk" visibility="private"/>
+    <conf name="androidTestFreeDebugCompile" visibility="private"/>
+    <conf name="androidTestFreeDebugCompileOnly" visibility="private" extends="androidTestFreeDebugProvided"/>
+    <conf name="androidTestFreeDebugCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestFreeDebugCompileOnly"/>
+    <conf name="androidTestFreeDebugImplementation" visibility="private" extends="androidTestFreeDebugApi"/>
+    <conf name="androidTestFreeDebugImplementationDependenciesMetadata" visibility="private" extends="androidTestFreeDebugImplementation"/>
+    <conf name="androidTestFreeDebugProvided" visibility="private"/>
+    <conf name="androidTestFreeDebugRuntimeOnly" visibility="private" extends="androidTestFreeDebugApk"/>
+    <conf name="androidTestFreeDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestFreeDebugRuntimeOnly"/>
+    <conf name="androidTestFreeDebugWearApp" visibility="private"/>
+    <conf name="androidTestFreeImplementation" visibility="private" extends="androidTestFreeApi"/>
+    <conf name="androidTestFreeImplementationDependenciesMetadata" visibility="private" extends="androidTestFreeImplementation"/>
+    <conf name="androidTestFreeProvided" visibility="private"/>
+    <conf name="androidTestFreeRuntimeOnly" visibility="private" extends="androidTestFreeApk"/>
+    <conf name="androidTestFreeRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestFreeRuntimeOnly"/>
+    <conf name="androidTestFreeWearApp" visibility="private"/>
+    <conf name="androidTestImplementation" visibility="private" extends="androidTestApi"/>
+    <conf name="androidTestImplementationDependenciesMetadata" visibility="private" extends="androidTestImplementation"/>
+    <conf name="androidTestProvided" visibility="private"/>
+    <conf name="androidTestRuntimeOnly" visibility="private" extends="androidTestApk"/>
+    <conf name="androidTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestRuntimeOnly"/>
+    <conf name="androidTestUtil" visibility="private"/>
+    <conf name="androidTestVipAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestVipApi" visibility="private" extends="androidTestVipCompile"/>
+    <conf name="androidTestVipApiDependenciesMetadata" visibility="private" extends="androidTestVipApi"/>
+    <conf name="androidTestVipApk" visibility="private"/>
+    <conf name="androidTestVipCompile" visibility="private"/>
+    <conf name="androidTestVipCompileOnly" visibility="private" extends="androidTestVipProvided"/>
+    <conf name="androidTestVipCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestVipCompileOnly"/>
+    <conf name="androidTestVipDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestVipDebugApi" visibility="private" extends="androidTestVipDebugCompile"/>
+    <conf name="androidTestVipDebugApiDependenciesMetadata" visibility="private" extends="androidTestVipDebugApi"/>
+    <conf name="androidTestVipDebugApk" visibility="private"/>
+    <conf name="androidTestVipDebugCompile" visibility="private"/>
+    <conf name="androidTestVipDebugCompileOnly" visibility="private" extends="androidTestVipDebugProvided"/>
+    <conf name="androidTestVipDebugCompileOnlyDependenciesMetadata" visibility="private" extends="androidTestVipDebugCompileOnly"/>
+    <conf name="androidTestVipDebugImplementation" visibility="private" extends="androidTestVipDebugApi"/>
+    <conf name="androidTestVipDebugImplementationDependenciesMetadata" visibility="private" extends="androidTestVipDebugImplementation"/>
+    <conf name="androidTestVipDebugProvided" visibility="private"/>
+    <conf name="androidTestVipDebugRuntimeOnly" visibility="private" extends="androidTestVipDebugApk"/>
+    <conf name="androidTestVipDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestVipDebugRuntimeOnly"/>
+    <conf name="androidTestVipDebugWearApp" visibility="private"/>
+    <conf name="androidTestVipImplementation" visibility="private" extends="androidTestVipApi"/>
+    <conf name="androidTestVipImplementationDependenciesMetadata" visibility="private" extends="androidTestVipImplementation"/>
+    <conf name="androidTestVipProvided" visibility="private"/>
+    <conf name="androidTestVipRuntimeOnly" visibility="private" extends="androidTestVipApk"/>
+    <conf name="androidTestVipRuntimeOnlyDependenciesMetadata" visibility="private" extends="androidTestVipRuntimeOnly"/>
+    <conf name="androidTestVipWearApp" visibility="private"/>
+    <conf name="androidTestWearApp" visibility="private"/>
+    <conf name="annotationProcessor" visibility="private"/>
+    <conf name="api" visibility="private" extends="compile"/>
+    <conf name="apiDependenciesMetadata" visibility="private" extends="api"/>
+    <conf name="apk" visibility="private"/>
+    <conf name="archives" visibility="public"/>
+    <conf name="compile" visibility="private"/>
+    <conf name="compileOnly" visibility="private" extends="provided"/>
+    <conf name="compileOnlyDependenciesMetadata" visibility="private" extends="compileOnly"/>
+    <conf name="debugAnnotationProcessor" visibility="private"/>
+    <conf name="debugApi" visibility="private" extends="debugCompile"/>
+    <conf name="debugApiDependenciesMetadata" visibility="private" extends="debugApi"/>
+    <conf name="debugApk" visibility="private"/>
+    <conf name="debugCompile" visibility="private"/>
+    <conf name="debugCompileOnly" visibility="private" extends="debugProvided"/>
+    <conf name="debugCompileOnlyDependenciesMetadata" visibility="private" extends="debugCompileOnly"/>
+    <conf name="debugImplementation" visibility="private" extends="debugApi"/>
+    <conf name="debugImplementationDependenciesMetadata" visibility="private" extends="debugImplementation"/>
+    <conf name="debugProvided" visibility="private"/>
+    <conf name="debugRuntimeOnly" visibility="private" extends="debugApk"/>
+    <conf name="debugRuntimeOnlyDependenciesMetadata" visibility="private" extends="debugRuntimeOnly"/>
+    <conf name="debugWearApp" visibility="private"/>
+    <conf name="default" visibility="public"/>
+    <conf name="freeAnnotationProcessor" visibility="private"/>
+    <conf name="freeApi" visibility="private" extends="freeCompile"/>
+    <conf name="freeApiDependenciesMetadata" visibility="private" extends="freeApi"/>
+    <conf name="freeApk" visibility="private"/>
+    <conf name="freeCompile" visibility="private"/>
+    <conf name="freeCompileOnly" visibility="private" extends="freeProvided"/>
+    <conf name="freeCompileOnlyDependenciesMetadata" visibility="private" extends="freeCompileOnly"/>
+    <conf name="freeDebugAndroidTestAnnotationProcessorClasspath" visibility="private" extends="androidTestAnnotationProcessor,androidTestDebugAnnotationProcessor,androidTestFreeAnnotationProcessor,androidTestFreeDebugAnnotationProcessor"/>
+    <conf name="freeDebugAndroidTestApi" visibility="private" extends="androidTestApi,androidTestDebugApi,androidTestFreeApi,androidTestFreeDebugApi,freeDebugAndroidTestCompile"/>
+    <conf name="freeDebugAndroidTestApiDependenciesMetadata" visibility="private" extends="freeDebugAndroidTestApi"/>
+    <conf name="freeDebugAndroidTestCompile" visibility="private"/>
+    <conf name="freeDebugAndroidTestCompileClasspath" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestDebugImplementation,androidTestFreeCompileOnly,androidTestFreeDebugCompileOnly,androidTestFreeDebugImplementation,androidTestFreeImplementation,androidTestImplementation,debugImplementation,freeDebugAndroidTestCompileOnly,freeDebugAndroidTestImplementation,freeDebugImplementation,freeImplementation,implementation"/>
+    <conf name="freeDebugAndroidTestCompileOnly" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestFreeCompileOnly,androidTestFreeDebugCompileOnly"/>
+    <conf name="freeDebugAndroidTestCompileOnlyDependenciesMetadata" visibility="private" extends="freeDebugAndroidTestCompileOnly"/>
+    <conf name="freeDebugAndroidTestImplementation" visibility="private" extends="androidTestDebugImplementation,androidTestFreeDebugImplementation,androidTestFreeImplementation,androidTestImplementation,freeDebugAndroidTestApi,freeDebugAndroidTestCompile"/>
+    <conf name="freeDebugAndroidTestImplementationDependenciesMetadata" visibility="private" extends="freeDebugAndroidTestImplementation"/>
+    <conf name="freeDebugAndroidTestRuntime" visibility="private" extends="freeDebugAndroidTestCompile"/>
+    <conf name="freeDebugAndroidTestRuntimeClasspath" visibility="private" extends="androidTestDebugImplementation,androidTestDebugRuntimeOnly,androidTestFreeDebugImplementation,androidTestFreeDebugRuntimeOnly,androidTestFreeImplementation,androidTestFreeRuntimeOnly,androidTestImplementation,androidTestRuntimeOnly,debugImplementation,debugRuntimeOnly,freeDebugAndroidTestImplementation,freeDebugAndroidTestRuntime,freeDebugAndroidTestRuntimeOnly,freeDebugImplementation,freeDebugRuntimeOnly,freeImplementation,freeRuntimeOnly,implementation,runtimeOnly"/>
+    <conf name="freeDebugAndroidTestRuntimeOnly" visibility="private"/>
+    <conf name="freeDebugAndroidTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeDebugAndroidTestRuntimeOnly"/>
+    <conf name="freeDebugAnnotationProcessor" visibility="private"/>
+    <conf name="freeDebugAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,debugAnnotationProcessor,freeAnnotationProcessor,freeDebugAnnotationProcessor"/>
+    <conf name="freeDebugApi" visibility="private" extends="api,debugApi,freeApi,freeDebugCompile"/>
+    <conf name="freeDebugApiDependenciesMetadata" visibility="private" extends="freeDebugApi"/>
+    <conf name="freeDebugApiElements" visibility="public" extends="api,debugApi,freeApi,freeDebugApi"/>
+    <conf name="freeDebugApk" visibility="private"/>
+    <conf name="freeDebugBundleElements" visibility="public"/>
+    <conf name="freeDebugCompile" visibility="private"/>
+    <conf name="freeDebugCompileClasspath" visibility="private" extends="compileOnly,debugCompileOnly,debugImplementation,freeCompileOnly,freeDebugCompileOnly,freeDebugImplementation,freeImplementation,implementation"/>
+    <conf name="freeDebugCompileOnly" visibility="private" extends="compileOnly,debugCompileOnly,freeCompileOnly,freeDebugProvided"/>
+    <conf name="freeDebugCompileOnlyDependenciesMetadata" visibility="private" extends="freeDebugCompileOnly"/>
+    <conf name="freeDebugImplementation" visibility="private" extends="debugImplementation,freeDebugApi,freeDebugCompile,freeImplementation,implementation"/>
+    <conf name="freeDebugImplementationDependenciesMetadata" visibility="private" extends="freeDebugImplementation"/>
+    <conf name="freeDebugMetadataElements" visibility="public"/>
+    <conf name="freeDebugMetadataValues" visibility="public"/>
+    <conf name="freeDebugProvided" visibility="private"/>
+    <conf name="freeDebugRuntime" visibility="private" extends="freeDebugCompile"/>
+    <conf name="freeDebugRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,freeDebugImplementation,freeDebugRuntime,freeDebugRuntimeOnly,freeImplementation,freeRuntimeOnly,implementation,runtimeOnly"/>
+    <conf name="freeDebugRuntimeElements" visibility="public"/>
+    <conf name="freeDebugRuntimeOnly" visibility="private" extends="freeDebugApk"/>
+    <conf name="freeDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeDebugRuntimeOnly"/>
+    <conf name="freeDebugUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testDebugAnnotationProcessor,testFreeAnnotationProcessor,testFreeDebugAnnotationProcessor"/>
+    <conf name="freeDebugUnitTestApi" visibility="private" extends="freeDebugUnitTestCompile,testApi,testDebugApi,testFreeApi,testFreeDebugApi"/>
+    <conf name="freeDebugUnitTestApiDependenciesMetadata" visibility="private" extends="freeDebugUnitTestApi"/>
+    <conf name="freeDebugUnitTestCompile" visibility="private"/>
+    <conf name="freeDebugUnitTestCompileClasspath" visibility="private" extends="debugImplementation,freeDebugImplementation,freeDebugUnitTestCompileOnly,freeDebugUnitTestImplementation,freeImplementation,implementation,testCompileOnly,testDebugCompileOnly,testDebugImplementation,testFreeCompileOnly,testFreeDebugCompileOnly,testFreeDebugImplementation,testFreeImplementation,testImplementation"/>
+    <conf name="freeDebugUnitTestCompileOnly" visibility="private" extends="testCompileOnly,testDebugCompileOnly,testFreeCompileOnly,testFreeDebugCompileOnly"/>
+    <conf name="freeDebugUnitTestCompileOnlyDependenciesMetadata" visibility="private" extends="freeDebugUnitTestCompileOnly"/>
+    <conf name="freeDebugUnitTestImplementation" visibility="private" extends="freeDebugUnitTestApi,freeDebugUnitTestCompile,testDebugImplementation,testFreeDebugImplementation,testFreeImplementation,testImplementation"/>
+    <conf name="freeDebugUnitTestImplementationDependenciesMetadata" visibility="private" extends="freeDebugUnitTestImplementation"/>
+    <conf name="freeDebugUnitTestRuntime" visibility="private" extends="freeDebugUnitTestCompile"/>
+    <conf name="freeDebugUnitTestRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,freeDebugImplementation,freeDebugRuntimeOnly,freeDebugUnitTestImplementation,freeDebugUnitTestRuntime,freeDebugUnitTestRuntimeOnly,freeImplementation,freeRuntimeOnly,implementation,runtimeOnly,testDebugImplementation,testDebugRuntimeOnly,testFreeDebugImplementation,testFreeDebugRuntimeOnly,testFreeImplementation,testFreeRuntimeOnly,testImplementation,testRuntimeOnly"/>
+    <conf name="freeDebugUnitTestRuntimeOnly" visibility="private"/>
+    <conf name="freeDebugUnitTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeDebugUnitTestRuntimeOnly"/>
+    <conf name="freeDebugWearApp" visibility="private"/>
+    <conf name="freeDebugWearBundling" visibility="public" extends="debugWearApp,freeDebugWearApp,freeWearApp,wearApp"/>
+    <conf name="freeImplementation" visibility="private" extends="freeApi"/>
+    <conf name="freeImplementationDependenciesMetadata" visibility="private" extends="freeImplementation"/>
+    <conf name="freeProvided" visibility="private"/>
+    <conf name="freeReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="freeReleaseAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,freeAnnotationProcessor,freeReleaseAnnotationProcessor,releaseAnnotationProcessor"/>
+    <conf name="freeReleaseApi" visibility="private" extends="api,freeApi,freeReleaseCompile,releaseApi"/>
+    <conf name="freeReleaseApiDependenciesMetadata" visibility="private" extends="freeReleaseApi"/>
+    <conf name="freeReleaseApiElements" visibility="public" extends="api,freeApi,freeReleaseApi,releaseApi"/>
+    <conf name="freeReleaseApk" visibility="private"/>
+    <conf name="freeReleaseBundleElements" visibility="public"/>
+    <conf name="freeReleaseCompile" visibility="private"/>
+    <conf name="freeReleaseCompileClasspath" visibility="private" extends="compileOnly,freeCompileOnly,freeImplementation,freeReleaseCompileOnly,freeReleaseImplementation,implementation,releaseCompileOnly,releaseImplementation"/>
+    <conf name="freeReleaseCompileOnly" visibility="private" extends="compileOnly,freeCompileOnly,freeReleaseProvided,releaseCompileOnly"/>
+    <conf name="freeReleaseCompileOnlyDependenciesMetadata" visibility="private" extends="freeReleaseCompileOnly"/>
+    <conf name="freeReleaseImplementation" visibility="private" extends="freeImplementation,freeReleaseApi,freeReleaseCompile,implementation,releaseImplementation"/>
+    <conf name="freeReleaseImplementationDependenciesMetadata" visibility="private" extends="freeReleaseImplementation"/>
+    <conf name="freeReleaseMetadataElements" visibility="public"/>
+    <conf name="freeReleaseMetadataValues" visibility="public"/>
+    <conf name="freeReleaseProvided" visibility="private"/>
+    <conf name="freeReleaseRuntime" visibility="private" extends="freeReleaseCompile"/>
+    <conf name="freeReleaseRuntimeClasspath" visibility="private" extends="freeImplementation,freeReleaseImplementation,freeReleaseRuntime,freeReleaseRuntimeOnly,freeRuntimeOnly,implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly"/>
+    <conf name="freeReleaseRuntimeElements" visibility="public"/>
+    <conf name="freeReleaseRuntimeOnly" visibility="private" extends="freeReleaseApk"/>
+    <conf name="freeReleaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeReleaseRuntimeOnly"/>
+    <conf name="freeReleaseUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testFreeAnnotationProcessor,testFreeReleaseAnnotationProcessor,testReleaseAnnotationProcessor"/>
+    <conf name="freeReleaseUnitTestApi" visibility="private" extends="freeReleaseUnitTestCompile,testApi,testFreeApi,testFreeReleaseApi,testReleaseApi"/>
+    <conf name="freeReleaseUnitTestApiDependenciesMetadata" visibility="private" extends="freeReleaseUnitTestApi"/>
+    <conf name="freeReleaseUnitTestCompile" visibility="private"/>
+    <conf name="freeReleaseUnitTestCompileClasspath" visibility="private" extends="freeImplementation,freeReleaseImplementation,freeReleaseUnitTestCompileOnly,freeReleaseUnitTestImplementation,implementation,releaseImplementation,testCompileOnly,testFreeCompileOnly,testFreeImplementation,testFreeReleaseCompileOnly,testFreeReleaseImplementation,testImplementation,testReleaseCompileOnly,testReleaseImplementation"/>
+    <conf name="freeReleaseUnitTestCompileOnly" visibility="private" extends="testCompileOnly,testFreeCompileOnly,testFreeReleaseCompileOnly,testReleaseCompileOnly"/>
+    <conf name="freeReleaseUnitTestCompileOnlyDependenciesMetadata" visibility="private" extends="freeReleaseUnitTestCompileOnly"/>
+    <conf name="freeReleaseUnitTestImplementation" visibility="private" extends="freeReleaseUnitTestApi,freeReleaseUnitTestCompile,testFreeImplementation,testFreeReleaseImplementation,testImplementation,testReleaseImplementation"/>
+    <conf name="freeReleaseUnitTestImplementationDependenciesMetadata" visibility="private" extends="freeReleaseUnitTestImplementation"/>
+    <conf name="freeReleaseUnitTestRuntime" visibility="private" extends="freeReleaseUnitTestCompile"/>
+    <conf name="freeReleaseUnitTestRuntimeClasspath" visibility="private" extends="freeImplementation,freeReleaseImplementation,freeReleaseRuntimeOnly,freeReleaseUnitTestImplementation,freeReleaseUnitTestRuntime,freeReleaseUnitTestRuntimeOnly,freeRuntimeOnly,implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly,testFreeImplementation,testFreeReleaseImplementation,testFreeReleaseRuntimeOnly,testFreeRuntimeOnly,testImplementation,testReleaseImplementation,testReleaseRuntimeOnly,testRuntimeOnly"/>
+    <conf name="freeReleaseUnitTestRuntimeOnly" visibility="private"/>
+    <conf name="freeReleaseUnitTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeReleaseUnitTestRuntimeOnly"/>
+    <conf name="freeReleaseWearApp" visibility="private"/>
+    <conf name="freeReleaseWearBundling" visibility="public" extends="freeReleaseWearApp,freeWearApp,releaseWearApp,wearApp"/>
+    <conf name="freeRuntimeOnly" visibility="private" extends="freeApk"/>
+    <conf name="freeRuntimeOnlyDependenciesMetadata" visibility="private" extends="freeRuntimeOnly"/>
+    <conf name="freeWearApp" visibility="private"/>
+    <conf name="implementation" visibility="private" extends="api"/>
+    <conf name="implementationDependenciesMetadata" visibility="private" extends="implementation"/>
+    <conf name="kapt" visibility="public"/>
+    <conf name="kaptAndroidTest" visibility="public" extends="kapt"/>
+    <conf name="kaptAndroidTestDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptAndroidTestFree" visibility="public" extends="kapt"/>
+    <conf name="kaptAndroidTestFreeDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptAndroidTestVip" visibility="public" extends="kapt"/>
+    <conf name="kaptAndroidTestVipDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptFree" visibility="public" extends="kapt"/>
+    <conf name="kaptFreeDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptFreeRelease" visibility="public" extends="kapt"/>
+    <conf name="kaptRelease" visibility="public" extends="kapt"/>
+    <conf name="kaptTest" visibility="public" extends="kapt"/>
+    <conf name="kaptTestDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptTestFree" visibility="public" extends="kapt"/>
+    <conf name="kaptTestFreeDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptTestFreeRelease" visibility="public" extends="kapt"/>
+    <conf name="kaptTestRelease" visibility="public" extends="kapt"/>
+    <conf name="kaptTestVip" visibility="public" extends="kapt"/>
+    <conf name="kaptTestVipDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptTestVipRelease" visibility="public" extends="kapt"/>
+    <conf name="kaptVip" visibility="public" extends="kapt"/>
+    <conf name="kaptVipDebug" visibility="public" extends="kapt"/>
+    <conf name="kaptVipRelease" visibility="public" extends="kapt"/>
+    <conf name="kotlinCompilerClasspath" visibility="public"/>
+    <conf name="kotlinCompilerPluginClasspath" visibility="public" transitive="false"/>
+    <conf name="lintChecks" visibility="private"/>
+    <conf name="lintClassPath" visibility="private"/>
+    <conf name="provided" visibility="private"/>
+    <conf name="releaseAnnotationProcessor" visibility="private"/>
+    <conf name="releaseApi" visibility="private" extends="releaseCompile"/>
+    <conf name="releaseApiDependenciesMetadata" visibility="private" extends="releaseApi"/>
+    <conf name="releaseApk" visibility="private"/>
+    <conf name="releaseCompile" visibility="private"/>
+    <conf name="releaseCompileOnly" visibility="private" extends="releaseProvided"/>
+    <conf name="releaseCompileOnlyDependenciesMetadata" visibility="private" extends="releaseCompileOnly"/>
+    <conf name="releaseImplementation" visibility="private" extends="releaseApi"/>
+    <conf name="releaseImplementationDependenciesMetadata" visibility="private" extends="releaseImplementation"/>
+    <conf name="releaseProvided" visibility="private"/>
+    <conf name="releaseRuntimeOnly" visibility="private" extends="releaseApk"/>
+    <conf name="releaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="releaseRuntimeOnly"/>
+    <conf name="releaseWearApp" visibility="private"/>
+    <conf name="runtimeOnly" visibility="private" extends="apk"/>
+    <conf name="runtimeOnlyDependenciesMetadata" visibility="private" extends="runtimeOnly"/>
+    <conf name="testAnnotationProcessor" visibility="private"/>
+    <conf name="testApi" visibility="private" extends="testCompile"/>
+    <conf name="testApiDependenciesMetadata" visibility="private" extends="testApi"/>
+    <conf name="testApk" visibility="private"/>
+    <conf name="testCompile" visibility="private"/>
+    <conf name="testCompileOnly" visibility="private" extends="testProvided"/>
+    <conf name="testCompileOnlyDependenciesMetadata" visibility="private" extends="testCompileOnly"/>
+    <conf name="testDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testDebugApi" visibility="private" extends="testDebugCompile"/>
+    <conf name="testDebugApiDependenciesMetadata" visibility="private" extends="testDebugApi"/>
+    <conf name="testDebugApk" visibility="private"/>
+    <conf name="testDebugCompile" visibility="private"/>
+    <conf name="testDebugCompileOnly" visibility="private" extends="testDebugProvided"/>
+    <conf name="testDebugCompileOnlyDependenciesMetadata" visibility="private" extends="testDebugCompileOnly"/>
+    <conf name="testDebugImplementation" visibility="private" extends="testDebugApi"/>
+    <conf name="testDebugImplementationDependenciesMetadata" visibility="private" extends="testDebugImplementation"/>
+    <conf name="testDebugProvided" visibility="private"/>
+    <conf name="testDebugRuntimeOnly" visibility="private" extends="testDebugApk"/>
+    <conf name="testDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="testDebugRuntimeOnly"/>
+    <conf name="testDebugWearApp" visibility="private"/>
+    <conf name="testFreeAnnotationProcessor" visibility="private"/>
+    <conf name="testFreeApi" visibility="private" extends="testFreeCompile"/>
+    <conf name="testFreeApiDependenciesMetadata" visibility="private" extends="testFreeApi"/>
+    <conf name="testFreeApk" visibility="private"/>
+    <conf name="testFreeCompile" visibility="private"/>
+    <conf name="testFreeCompileOnly" visibility="private" extends="testFreeProvided"/>
+    <conf name="testFreeCompileOnlyDependenciesMetadata" visibility="private" extends="testFreeCompileOnly"/>
+    <conf name="testFreeDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testFreeDebugApi" visibility="private" extends="testFreeDebugCompile"/>
+    <conf name="testFreeDebugApiDependenciesMetadata" visibility="private" extends="testFreeDebugApi"/>
+    <conf name="testFreeDebugApk" visibility="private"/>
+    <conf name="testFreeDebugCompile" visibility="private"/>
+    <conf name="testFreeDebugCompileOnly" visibility="private" extends="testFreeDebugProvided"/>
+    <conf name="testFreeDebugCompileOnlyDependenciesMetadata" visibility="private" extends="testFreeDebugCompileOnly"/>
+    <conf name="testFreeDebugImplementation" visibility="private" extends="testFreeDebugApi"/>
+    <conf name="testFreeDebugImplementationDependenciesMetadata" visibility="private" extends="testFreeDebugImplementation"/>
+    <conf name="testFreeDebugProvided" visibility="private"/>
+    <conf name="testFreeDebugRuntimeOnly" visibility="private" extends="testFreeDebugApk"/>
+    <conf name="testFreeDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="testFreeDebugRuntimeOnly"/>
+    <conf name="testFreeDebugWearApp" visibility="private"/>
+    <conf name="testFreeImplementation" visibility="private" extends="testFreeApi"/>
+    <conf name="testFreeImplementationDependenciesMetadata" visibility="private" extends="testFreeImplementation"/>
+    <conf name="testFreeProvided" visibility="private"/>
+    <conf name="testFreeReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testFreeReleaseApi" visibility="private" extends="testFreeReleaseCompile"/>
+    <conf name="testFreeReleaseApiDependenciesMetadata" visibility="private" extends="testFreeReleaseApi"/>
+    <conf name="testFreeReleaseApk" visibility="private"/>
+    <conf name="testFreeReleaseCompile" visibility="private"/>
+    <conf name="testFreeReleaseCompileOnly" visibility="private" extends="testFreeReleaseProvided"/>
+    <conf name="testFreeReleaseCompileOnlyDependenciesMetadata" visibility="private" extends="testFreeReleaseCompileOnly"/>
+    <conf name="testFreeReleaseImplementation" visibility="private" extends="testFreeReleaseApi"/>
+    <conf name="testFreeReleaseImplementationDependenciesMetadata" visibility="private" extends="testFreeReleaseImplementation"/>
+    <conf name="testFreeReleaseProvided" visibility="private"/>
+    <conf name="testFreeReleaseRuntimeOnly" visibility="private" extends="testFreeReleaseApk"/>
+    <conf name="testFreeReleaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="testFreeReleaseRuntimeOnly"/>
+    <conf name="testFreeReleaseWearApp" visibility="private"/>
+    <conf name="testFreeRuntimeOnly" visibility="private" extends="testFreeApk"/>
+    <conf name="testFreeRuntimeOnlyDependenciesMetadata" visibility="private" extends="testFreeRuntimeOnly"/>
+    <conf name="testFreeWearApp" visibility="private"/>
+    <conf name="testImplementation" visibility="private" extends="testApi"/>
+    <conf name="testImplementationDependenciesMetadata" visibility="private" extends="testImplementation"/>
+    <conf name="testProvided" visibility="private"/>
+    <conf name="testReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testReleaseApi" visibility="private" extends="testReleaseCompile"/>
+    <conf name="testReleaseApiDependenciesMetadata" visibility="private" extends="testReleaseApi"/>
+    <conf name="testReleaseApk" visibility="private"/>
+    <conf name="testReleaseCompile" visibility="private"/>
+    <conf name="testReleaseCompileOnly" visibility="private" extends="testReleaseProvided"/>
+    <conf name="testReleaseCompileOnlyDependenciesMetadata" visibility="private" extends="testReleaseCompileOnly"/>
+    <conf name="testReleaseImplementation" visibility="private" extends="testReleaseApi"/>
+    <conf name="testReleaseImplementationDependenciesMetadata" visibility="private" extends="testReleaseImplementation"/>
+    <conf name="testReleaseProvided" visibility="private"/>
+    <conf name="testReleaseRuntimeOnly" visibility="private" extends="testReleaseApk"/>
+    <conf name="testReleaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="testReleaseRuntimeOnly"/>
+    <conf name="testReleaseWearApp" visibility="private"/>
+    <conf name="testRuntimeOnly" visibility="private" extends="testApk"/>
+    <conf name="testRuntimeOnlyDependenciesMetadata" visibility="private" extends="testRuntimeOnly"/>
+    <conf name="testVipAnnotationProcessor" visibility="private"/>
+    <conf name="testVipApi" visibility="private" extends="testVipCompile"/>
+    <conf name="testVipApiDependenciesMetadata" visibility="private" extends="testVipApi"/>
+    <conf name="testVipApk" visibility="private"/>
+    <conf name="testVipCompile" visibility="private"/>
+    <conf name="testVipCompileOnly" visibility="private" extends="testVipProvided"/>
+    <conf name="testVipCompileOnlyDependenciesMetadata" visibility="private" extends="testVipCompileOnly"/>
+    <conf name="testVipDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testVipDebugApi" visibility="private" extends="testVipDebugCompile"/>
+    <conf name="testVipDebugApiDependenciesMetadata" visibility="private" extends="testVipDebugApi"/>
+    <conf name="testVipDebugApk" visibility="private"/>
+    <conf name="testVipDebugCompile" visibility="private"/>
+    <conf name="testVipDebugCompileOnly" visibility="private" extends="testVipDebugProvided"/>
+    <conf name="testVipDebugCompileOnlyDependenciesMetadata" visibility="private" extends="testVipDebugCompileOnly"/>
+    <conf name="testVipDebugImplementation" visibility="private" extends="testVipDebugApi"/>
+    <conf name="testVipDebugImplementationDependenciesMetadata" visibility="private" extends="testVipDebugImplementation"/>
+    <conf name="testVipDebugProvided" visibility="private"/>
+    <conf name="testVipDebugRuntimeOnly" visibility="private" extends="testVipDebugApk"/>
+    <conf name="testVipDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="testVipDebugRuntimeOnly"/>
+    <conf name="testVipDebugWearApp" visibility="private"/>
+    <conf name="testVipImplementation" visibility="private" extends="testVipApi"/>
+    <conf name="testVipImplementationDependenciesMetadata" visibility="private" extends="testVipImplementation"/>
+    <conf name="testVipProvided" visibility="private"/>
+    <conf name="testVipReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testVipReleaseApi" visibility="private" extends="testVipReleaseCompile"/>
+    <conf name="testVipReleaseApiDependenciesMetadata" visibility="private" extends="testVipReleaseApi"/>
+    <conf name="testVipReleaseApk" visibility="private"/>
+    <conf name="testVipReleaseCompile" visibility="private"/>
+    <conf name="testVipReleaseCompileOnly" visibility="private" extends="testVipReleaseProvided"/>
+    <conf name="testVipReleaseCompileOnlyDependenciesMetadata" visibility="private" extends="testVipReleaseCompileOnly"/>
+    <conf name="testVipReleaseImplementation" visibility="private" extends="testVipReleaseApi"/>
+    <conf name="testVipReleaseImplementationDependenciesMetadata" visibility="private" extends="testVipReleaseImplementation"/>
+    <conf name="testVipReleaseProvided" visibility="private"/>
+    <conf name="testVipReleaseRuntimeOnly" visibility="private" extends="testVipReleaseApk"/>
+    <conf name="testVipReleaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="testVipReleaseRuntimeOnly"/>
+    <conf name="testVipReleaseWearApp" visibility="private"/>
+    <conf name="testVipRuntimeOnly" visibility="private" extends="testVipApk"/>
+    <conf name="testVipRuntimeOnlyDependenciesMetadata" visibility="private" extends="testVipRuntimeOnly"/>
+    <conf name="testVipWearApp" visibility="private"/>
+    <conf name="testWearApp" visibility="private"/>
+    <conf name="vipAnnotationProcessor" visibility="private"/>
+    <conf name="vipApi" visibility="private" extends="vipCompile"/>
+    <conf name="vipApiDependenciesMetadata" visibility="private" extends="vipApi"/>
+    <conf name="vipApk" visibility="private"/>
+    <conf name="vipCompile" visibility="private"/>
+    <conf name="vipCompileOnly" visibility="private" extends="vipProvided"/>
+    <conf name="vipCompileOnlyDependenciesMetadata" visibility="private" extends="vipCompileOnly"/>
+    <conf name="vipDebugAndroidTestAnnotationProcessorClasspath" visibility="private" extends="androidTestAnnotationProcessor,androidTestDebugAnnotationProcessor,androidTestVipAnnotationProcessor,androidTestVipDebugAnnotationProcessor"/>
+    <conf name="vipDebugAndroidTestApi" visibility="private" extends="androidTestApi,androidTestDebugApi,androidTestVipApi,androidTestVipDebugApi,vipDebugAndroidTestCompile"/>
+    <conf name="vipDebugAndroidTestApiDependenciesMetadata" visibility="private" extends="vipDebugAndroidTestApi"/>
+    <conf name="vipDebugAndroidTestCompile" visibility="private"/>
+    <conf name="vipDebugAndroidTestCompileClasspath" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestDebugImplementation,androidTestImplementation,androidTestVipCompileOnly,androidTestVipDebugCompileOnly,androidTestVipDebugImplementation,androidTestVipImplementation,debugImplementation,implementation,vipDebugAndroidTestCompileOnly,vipDebugAndroidTestImplementation,vipDebugImplementation,vipImplementation"/>
+    <conf name="vipDebugAndroidTestCompileOnly" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestVipCompileOnly,androidTestVipDebugCompileOnly"/>
+    <conf name="vipDebugAndroidTestCompileOnlyDependenciesMetadata" visibility="private" extends="vipDebugAndroidTestCompileOnly"/>
+    <conf name="vipDebugAndroidTestImplementation" visibility="private" extends="androidTestDebugImplementation,androidTestImplementation,androidTestVipDebugImplementation,androidTestVipImplementation,vipDebugAndroidTestApi,vipDebugAndroidTestCompile"/>
+    <conf name="vipDebugAndroidTestImplementationDependenciesMetadata" visibility="private" extends="vipDebugAndroidTestImplementation"/>
+    <conf name="vipDebugAndroidTestRuntime" visibility="private" extends="vipDebugAndroidTestCompile"/>
+    <conf name="vipDebugAndroidTestRuntimeClasspath" visibility="private" extends="androidTestDebugImplementation,androidTestDebugRuntimeOnly,androidTestImplementation,androidTestRuntimeOnly,androidTestVipDebugImplementation,androidTestVipDebugRuntimeOnly,androidTestVipImplementation,androidTestVipRuntimeOnly,debugImplementation,debugRuntimeOnly,implementation,runtimeOnly,vipDebugAndroidTestImplementation,vipDebugAndroidTestRuntime,vipDebugAndroidTestRuntimeOnly,vipDebugImplementation,vipDebugRuntimeOnly,vipImplementation,vipRuntimeOnly"/>
+    <conf name="vipDebugAndroidTestRuntimeOnly" visibility="private"/>
+    <conf name="vipDebugAndroidTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipDebugAndroidTestRuntimeOnly"/>
+    <conf name="vipDebugAnnotationProcessor" visibility="private"/>
+    <conf name="vipDebugAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,debugAnnotationProcessor,vipAnnotationProcessor,vipDebugAnnotationProcessor"/>
+    <conf name="vipDebugApi" visibility="private" extends="api,debugApi,vipApi,vipDebugCompile"/>
+    <conf name="vipDebugApiDependenciesMetadata" visibility="private" extends="vipDebugApi"/>
+    <conf name="vipDebugApiElements" visibility="public" extends="api,debugApi,vipApi,vipDebugApi"/>
+    <conf name="vipDebugApk" visibility="private"/>
+    <conf name="vipDebugBundleElements" visibility="public"/>
+    <conf name="vipDebugCompile" visibility="private"/>
+    <conf name="vipDebugCompileClasspath" visibility="private" extends="compileOnly,debugCompileOnly,debugImplementation,implementation,vipCompileOnly,vipDebugCompileOnly,vipDebugImplementation,vipImplementation"/>
+    <conf name="vipDebugCompileOnly" visibility="private" extends="compileOnly,debugCompileOnly,vipCompileOnly,vipDebugProvided"/>
+    <conf name="vipDebugCompileOnlyDependenciesMetadata" visibility="private" extends="vipDebugCompileOnly"/>
+    <conf name="vipDebugImplementation" visibility="private" extends="debugImplementation,implementation,vipDebugApi,vipDebugCompile,vipImplementation"/>
+    <conf name="vipDebugImplementationDependenciesMetadata" visibility="private" extends="vipDebugImplementation"/>
+    <conf name="vipDebugMetadataElements" visibility="public"/>
+    <conf name="vipDebugMetadataValues" visibility="public"/>
+    <conf name="vipDebugProvided" visibility="private"/>
+    <conf name="vipDebugRuntime" visibility="private" extends="vipDebugCompile"/>
+    <conf name="vipDebugRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,implementation,runtimeOnly,vipDebugImplementation,vipDebugRuntime,vipDebugRuntimeOnly,vipImplementation,vipRuntimeOnly"/>
+    <conf name="vipDebugRuntimeElements" visibility="public"/>
+    <conf name="vipDebugRuntimeOnly" visibility="private" extends="vipDebugApk"/>
+    <conf name="vipDebugRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipDebugRuntimeOnly"/>
+    <conf name="vipDebugUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testDebugAnnotationProcessor,testVipAnnotationProcessor,testVipDebugAnnotationProcessor"/>
+    <conf name="vipDebugUnitTestApi" visibility="private" extends="testApi,testDebugApi,testVipApi,testVipDebugApi,vipDebugUnitTestCompile"/>
+    <conf name="vipDebugUnitTestApiDependenciesMetadata" visibility="private" extends="vipDebugUnitTestApi"/>
+    <conf name="vipDebugUnitTestCompile" visibility="private"/>
+    <conf name="vipDebugUnitTestCompileClasspath" visibility="private" extends="debugImplementation,implementation,testCompileOnly,testDebugCompileOnly,testDebugImplementation,testImplementation,testVipCompileOnly,testVipDebugCompileOnly,testVipDebugImplementation,testVipImplementation,vipDebugImplementation,vipDebugUnitTestCompileOnly,vipDebugUnitTestImplementation,vipImplementation"/>
+    <conf name="vipDebugUnitTestCompileOnly" visibility="private" extends="testCompileOnly,testDebugCompileOnly,testVipCompileOnly,testVipDebugCompileOnly"/>
+    <conf name="vipDebugUnitTestCompileOnlyDependenciesMetadata" visibility="private" extends="vipDebugUnitTestCompileOnly"/>
+    <conf name="vipDebugUnitTestImplementation" visibility="private" extends="testDebugImplementation,testImplementation,testVipDebugImplementation,testVipImplementation,vipDebugUnitTestApi,vipDebugUnitTestCompile"/>
+    <conf name="vipDebugUnitTestImplementationDependenciesMetadata" visibility="private" extends="vipDebugUnitTestImplementation"/>
+    <conf name="vipDebugUnitTestRuntime" visibility="private" extends="vipDebugUnitTestCompile"/>
+    <conf name="vipDebugUnitTestRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,implementation,runtimeOnly,testDebugImplementation,testDebugRuntimeOnly,testImplementation,testRuntimeOnly,testVipDebugImplementation,testVipDebugRuntimeOnly,testVipImplementation,testVipRuntimeOnly,vipDebugImplementation,vipDebugRuntimeOnly,vipDebugUnitTestImplementation,vipDebugUnitTestRuntime,vipDebugUnitTestRuntimeOnly,vipImplementation,vipRuntimeOnly"/>
+    <conf name="vipDebugUnitTestRuntimeOnly" visibility="private"/>
+    <conf name="vipDebugUnitTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipDebugUnitTestRuntimeOnly"/>
+    <conf name="vipDebugWearApp" visibility="private"/>
+    <conf name="vipDebugWearBundling" visibility="public" extends="debugWearApp,vipDebugWearApp,vipWearApp,wearApp"/>
+    <conf name="vipImplementation" visibility="private" extends="vipApi"/>
+    <conf name="vipImplementationDependenciesMetadata" visibility="private" extends="vipImplementation"/>
+    <conf name="vipProvided" visibility="private"/>
+    <conf name="vipReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="vipReleaseAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,releaseAnnotationProcessor,vipAnnotationProcessor,vipReleaseAnnotationProcessor"/>
+    <conf name="vipReleaseApi" visibility="private" extends="api,releaseApi,vipApi,vipReleaseCompile"/>
+    <conf name="vipReleaseApiDependenciesMetadata" visibility="private" extends="vipReleaseApi"/>
+    <conf name="vipReleaseApiElements" visibility="public" extends="api,releaseApi,vipApi,vipReleaseApi"/>
+    <conf name="vipReleaseApk" visibility="private"/>
+    <conf name="vipReleaseBundleElements" visibility="public"/>
+    <conf name="vipReleaseCompile" visibility="private"/>
+    <conf name="vipReleaseCompileClasspath" visibility="private" extends="compileOnly,implementation,releaseCompileOnly,releaseImplementation,vipCompileOnly,vipImplementation,vipReleaseCompileOnly,vipReleaseImplementation"/>
+    <conf name="vipReleaseCompileOnly" visibility="private" extends="compileOnly,releaseCompileOnly,vipCompileOnly,vipReleaseProvided"/>
+    <conf name="vipReleaseCompileOnlyDependenciesMetadata" visibility="private" extends="vipReleaseCompileOnly"/>
+    <conf name="vipReleaseImplementation" visibility="private" extends="implementation,releaseImplementation,vipImplementation,vipReleaseApi,vipReleaseCompile"/>
+    <conf name="vipReleaseImplementationDependenciesMetadata" visibility="private" extends="vipReleaseImplementation"/>
+    <conf name="vipReleaseMetadataElements" visibility="public"/>
+    <conf name="vipReleaseMetadataValues" visibility="public"/>
+    <conf name="vipReleaseProvided" visibility="private"/>
+    <conf name="vipReleaseRuntime" visibility="private" extends="vipReleaseCompile"/>
+    <conf name="vipReleaseRuntimeClasspath" visibility="private" extends="implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly,vipImplementation,vipReleaseImplementation,vipReleaseRuntime,vipReleaseRuntimeOnly,vipRuntimeOnly"/>
+    <conf name="vipReleaseRuntimeElements" visibility="public"/>
+    <conf name="vipReleaseRuntimeOnly" visibility="private" extends="vipReleaseApk"/>
+    <conf name="vipReleaseRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipReleaseRuntimeOnly"/>
+    <conf name="vipReleaseUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testReleaseAnnotationProcessor,testVipAnnotationProcessor,testVipReleaseAnnotationProcessor"/>
+    <conf name="vipReleaseUnitTestApi" visibility="private" extends="testApi,testReleaseApi,testVipApi,testVipReleaseApi,vipReleaseUnitTestCompile"/>
+    <conf name="vipReleaseUnitTestApiDependenciesMetadata" visibility="private" extends="vipReleaseUnitTestApi"/>
+    <conf name="vipReleaseUnitTestCompile" visibility="private"/>
+    <conf name="vipReleaseUnitTestCompileClasspath" visibility="private" extends="implementation,releaseImplementation,testCompileOnly,testImplementation,testReleaseCompileOnly,testReleaseImplementation,testVipCompileOnly,testVipImplementation,testVipReleaseCompileOnly,testVipReleaseImplementation,vipImplementation,vipReleaseImplementation,vipReleaseUnitTestCompileOnly,vipReleaseUnitTestImplementation"/>
+    <conf name="vipReleaseUnitTestCompileOnly" visibility="private" extends="testCompileOnly,testReleaseCompileOnly,testVipCompileOnly,testVipReleaseCompileOnly"/>
+    <conf name="vipReleaseUnitTestCompileOnlyDependenciesMetadata" visibility="private" extends="vipReleaseUnitTestCompileOnly"/>
+    <conf name="vipReleaseUnitTestImplementation" visibility="private" extends="testImplementation,testReleaseImplementation,testVipImplementation,testVipReleaseImplementation,vipReleaseUnitTestApi,vipReleaseUnitTestCompile"/>
+    <conf name="vipReleaseUnitTestImplementationDependenciesMetadata" visibility="private" extends="vipReleaseUnitTestImplementation"/>
+    <conf name="vipReleaseUnitTestRuntime" visibility="private" extends="vipReleaseUnitTestCompile"/>
+    <conf name="vipReleaseUnitTestRuntimeClasspath" visibility="private" extends="implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly,testImplementation,testReleaseImplementation,testReleaseRuntimeOnly,testRuntimeOnly,testVipImplementation,testVipReleaseImplementation,testVipReleaseRuntimeOnly,testVipRuntimeOnly,vipImplementation,vipReleaseImplementation,vipReleaseRuntimeOnly,vipReleaseUnitTestImplementation,vipReleaseUnitTestRuntime,vipReleaseUnitTestRuntimeOnly,vipRuntimeOnly"/>
+    <conf name="vipReleaseUnitTestRuntimeOnly" visibility="private"/>
+    <conf name="vipReleaseUnitTestRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipReleaseUnitTestRuntimeOnly"/>
+    <conf name="vipReleaseWearApp" visibility="private"/>
+    <conf name="vipReleaseWearBundling" visibility="public" extends="releaseWearApp,vipReleaseWearApp,vipWearApp,wearApp"/>
+    <conf name="vipRuntimeOnly" visibility="private" extends="vipApk"/>
+    <conf name="vipRuntimeOnlyDependenciesMetadata" visibility="private" extends="vipRuntimeOnly"/>
+    <conf name="vipWearApp" visibility="private"/>
+    <conf name="wearApp" visibility="private"/>
+  </configurations>
+  <publications>
+    <artifact name="app" type="jar" ext="jar" conf="archives"/>
+  </publications>
+  <dependencies>
+    <dependency org="com.android.tools.build" name="aapt2" rev="3.2.1-4818971" conf="_internal_aapt2_binary-&gt;default">
+      <artifact name="aapt2" type="jar" ext="jar" m:classifier="osx" conf="_internal_aapt2_binary"/>
+    </dependency>
+    <dependency org="com.android.support" name="appcompat-v7" rev="28.0.0" conf="implementation-&gt;default"/>
+    <dependency org="com.android.support.constraint" name="constraint-layout" rev="1.1.3" conf="implementation-&gt;default"/>
+    <dependency org="org.jetbrains.kotlin" name="kotlin-stdlib-jdk7" rev="1.2.71" conf="implementation-&gt;default"/>
+    <dependency org="org.jetbrains.kotlin" name="kotlin-compiler-embeddable" rev="1.2.71" conf="kotlinCompilerClasspath-&gt;default"/>
+    <dependency org="org.jetbrains.kotlin" name="kotlin-android-extensions" rev="1.2.71" conf="kotlinCompilerPluginClasspath-&gt;default"/>
+    <dependency org="com.android.tools.lint" name="lint-gradle" rev="26.2.1" conf="lintClassPath-&gt;default"/>
+    <dependency org="junit" name="junit" rev="4.12" conf="testImplementation-&gt;default"/>
+  </dependencies>
+</ivy-module>
